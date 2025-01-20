@@ -1,0 +1,28 @@
+body {
+    background-image: url("bg.image.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    margin: 0;
+}
+
+.card {
+    margin-left: 15%;
+    border-radius: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #B1D4E0;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+#cityInput {
+    background-color:#F6EEE0;
+}
