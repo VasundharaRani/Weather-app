@@ -50,6 +50,10 @@ function fetchWeatherData(url) {
                 description.textContent = `Weather: ${data.weather[0].description}`;
                 humidity.textContent = `Humidity: ${data.main.humidity}%`;
                 windSpeed.textContent = `Wind Speed: ${data.wind.speed} m/s`;
+                const iconCode = data.weather[0].icon;
+                const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+                document.getElementById('weatherIcon').src = iconUrl;
+                document.querySelector('.weather-info').hidden = false;
             } else {
                 alert('City not found. Please enter a valid city name.');
             }
